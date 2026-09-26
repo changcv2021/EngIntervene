@@ -1,5 +1,25 @@
 # EngIntervene: Benchmarking Multimodal Engineering State Understanding and Design Intervention Reasoning
 
+## Dataset on Hugging Face
+
+**The EngIntervene dataset is available at the anonymous Hugging Face repository:**
+
+### [benchmarkanon/EngIntervene](https://huggingface.co/datasets/benchmarkanon/EngIntervene)
+
+This is the download and access location for the complete **3,229-item benchmark
+input dataset**, covering **seven industrial domains and tasks T1–T4**. It includes
+the questions, options where applicable, response requirements and input images.
+The Hugging Face `test` split contains the full benchmark, not only the SFT
+experiment's held-out subset.
+
+This GitHub repository provides the **training and evaluation code**; download
+the dataset from the Hugging Face link above. Gold reference answers and scoring
+rubrics are kept separately and are not included in that input release.
+
+数据集访问与下载请使用上方 Hugging Face 匿名链接；本 GitHub 仓库用于发布训练与测评代码。
+
+## Experiment code
+
 Official experiment code for EngIntervene. This repository reuses the validated
 code supplement; publishing updates its title, publication note and file hashes,
 not the training, inference or scoring algorithms.

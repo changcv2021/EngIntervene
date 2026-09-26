@@ -5,7 +5,7 @@
     "CODE_PROVENANCE.json": "73dc00f6bf23657533c65af423fef0a3230ff22c08d3e53977659f96e5150724",
     "LICENSE.txt": "ced730d74ef2377e16b3f2f916c998e61d0688484d9d84c8cfb9f0b1f031bdb3",
     "NOTICE.md": "8c5b8b32b1f4917f7b9c623d140f60fa15f20c834c42bf9c77ee251e83fbc4ad",
-    "README.md": "9b663545a8643520cc419cec2494e7db96a1e3f23d761380f576ec15108d6707",
+    "README.md": "542a904eb625eb288942b962a4b6a63b21d4769a7620cea56b902380627ce93a",
     "VALIDATION.json": "2cca414e73e9d6c2621636a37b68dad8f1679f60a5568b3e14c0f02187ffd7f1",
     "VALIDATION.md": "c45338988a62ee4f771c1e65e3dbf7554eec8a77deb5c05246b0c4e108a41359",
     "configs/evaluation.json": "f5908f6e259e63d467f98712228690ae789f6ce50ad6f36b0b6bd160aad5dd43",
@@ -33,7 +33,8 @@
   "anonymity_matches": 0,
   "publication_changes": [
     "README title/introduction",
-    "Public-hosting anonymity notice"
+    "Public-hosting anonymity notice",
+    "Prominent Hugging Face dataset access section"
   ],
   "source_archive_sha256": "6d821d10a8598538fba6893ba3abc545aa89a0de0d29537bc5a8247d6b374bcd"
 }
