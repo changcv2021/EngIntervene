@@ -1,0 +1,16 @@
+{
+  "upstream": "existing completed experiments",
+  "source_sha256": {
+    "training": "feed0e9e74ac0b578e112a0993ff7ed7f06dcb57f3f821e85ff1603a36808577",
+    "judge": "2354596af0da609244c4a7715101c5446d2d7057e3495d05749dd09cfdd095c6",
+    "t1_scoring": "6fa4a0322d43660ac3d772ae3cdbd88f4005654eb4364ac6693c02421361be4b",
+    "target_export": "f11c03dede1d3125b9a06d500f8a6347affff9454b41ee40f316898d9fbefc6b",
+    "evaluation_common": "af134bda6487230efedf0d8b932eacda3b5097efa3fb5fb4dd36addee513458c"
+  },
+  "changes": [
+    "Portable paths and CLI wrappers; no site-specific submission controller.",
+    "Historical training loop, optimizer, loss masks, prompts, T1 parser, rubric math and judge generation preserved.",
+    "Generic local inference, data import, summary, and ablation wrappers are new packaging code.",
+    "Fixed split and sampling IDs included; no question text, answers, images, credentials or trained weights included."
+  ]
+}

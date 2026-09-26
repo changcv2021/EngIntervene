@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "status": "evaluation_candidate",
+  "effective_for_future_runs": true,
+  "default_judge_for_open_tasks": true,
+  "judge_model_id": "Qwen/Qwen3.5-4B",
+  "judge_protocol": "qwen35_4b_atomic_criterion_verbatim_evidence_v1.1",
+  "decoding": {
+    "enable_thinking": false,
+    "do_sample": false,
+    "max_new_tokens_first_attempt": 160,
+    "max_new_tokens_retry": 128,
+    "maximum_attempts": 3,
+    "hard_fail_after_invalid_final_attempt": false,
+    "invalid_final_attempt_policy": "fail_closed_met_false_and_log"
+  },
+  "tasks": {
+    "T1": {
+      "method": "deterministic_unicode_exact_choice_set_v2",
+      "llm_judge": false
+    },
+    "T2": {
+      "method": "atomic_rubric",
+      "llm_judge": true,
+      "metrics": [
+        "atomic_rubric_score",
+        "strict_success_rate"
+      ]
+    },
+    "T3": {
+      "method": "atomic_rubric",
+      "llm_judge": true,
+      "metrics": [
+        "atomic_rubric_score",
+        "strict_success_rate"
+      ]
+    },
+    "T4": {
+      "method": "atomic_rubric",
+      "llm_judge": true,
+      "primary_metrics": [
+        "atomic_rubric_score",
+        "strict_revision_success_rate"
+      ],
+      "diagnostic_metrics": [
+        "constraint_preservation_rate",
+        "critical_regression_rate"
+      ]
+    }
+  },
+  "evidence_policy": {
+    "must_be_verbatim_candidate_span": true,
+    "minimum_nonwhitespace_characters": 2,
+    "maximum_nonwhitespace_characters": 80,
+    "met_false_requires_empty_evidence": true
+  },
+  "reporting": {
+    "overall": "task_macro_average",
+    "also_report_split_group_balanced": true,
+    "automatic_judge_not_expert_adjudication": true
+  },
+  "release_gate": {
+    "human_calibration_required_for_paper_ranking": true,
+    "atomicity_review_queue_must_be_resolved": true
+  }
+}

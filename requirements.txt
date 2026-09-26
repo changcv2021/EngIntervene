@@ -1,0 +1,9 @@
+# Historical training runtime; install an appropriate PyTorch CUDA build first.
+torch==2.8.0
+transformers @ git+https://github.com/huggingface/transformers.git@64d071cca5ab762365d860cc78eedfd16c973e47
+peft==0.20.0
+accelerate
+Pillow
+safetensors
+# Only needed for local Hugging Face Parquet input:
+pyarrow
