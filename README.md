@@ -16,7 +16,6 @@ This GitHub repository provides the **training and evaluation code**; download
 the dataset from the Hugging Face link above. Gold reference answers and scoring
 rubrics are kept separately and are not included in that input release.
 
-数据集访问与下载请使用上方 Hugging Face 匿名链接；本 GitHub 仓库用于发布训练与测评代码。
 
 ## Experiment code
 
